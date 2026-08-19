@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edson Arantes do Nascimento - Pelé</title>
+    <meta
+      name="description"
+      content="Página informativa sobre Edson Arantes do Nascimento, Pelé."
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="nose">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-pele sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#inicio">
+            <span class="badge-10">10</span>
+            Pelé · O Rey
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navPele"
+            aria-controls="navPele"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navPele">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#informacion">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formulario">Formulario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contenido">Contenido</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container" id="inicio">
+        <!-- Título -->
+        <header class="hero">
+          <div class="main-title">
+            <p class="subtitle">Leyenda del fútbol brasileño</p>
+            <h1>Edson Arantes do Nascimento (Pelé)</h1>
+          </div>
+        </header>
+
+        <!-- Información + Carrusel + Formulario -->
+        <div class="row g-4 align-items-stretch">
+          <!-- Información -->
+          <div class="col-12 col-lg-4" id="informacion">
+            <section class="info-box">
+              <h2>Información</h2>
+              <p>
+                Edson Arantes do Nascimento nació el 23 de octubre de 1940 en
+                Três Corações, Minas Gerais (Brasil). Hijo del también
+                futbolista Dondinho, de niño se ganó la vida como lustrabotas
+                antes de que el exjugador Waldemar de Brito lo llevara al Santos
+                Fútbol Club, club en el que debutó oficialmente en 1956 y donde
+                jugó hasta 1974.
+              </p>
+              <p>
+                Con apenas 17 años se convirtió en el jugador más joven en
+                disputar una final de Copa del Mundo, título que conquistó con
+                Brasil en 1958 y que repitió en 1962 y 1970, siendo hasta hoy el
+                único futbolista con tres campeonatos mundiales. Apodado
+                <em>"O Rey"</em> y "la Perla Negra", cerró su carrera con más de
+                1.000 goles reconocidos por el Libro Guinness de los Récords.
+                Falleció el 29 de diciembre de 2022 en São Paulo, dejando un
+                legado que la FIFA reconoció nombrándolo el mejor futbolista del
+                siglo XX.
+              </p>
+            </section>
+          </div>
+
+          <!-- Carrusel -->
+          <div class="col-12 col-lg-4" id="galeria">
+            <div
+              id="carousel-pele"
+              class="carousel slide shadow-sm"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-pele"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Imagen 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-pele"
+                  data-bs-slide-to="1"
+                  aria-label="Imagen 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-pele"
+                  data-bs-slide-to="2"
+                  aria-label="Imagen 3"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="1.jpg"
+                    class="d-block"
+                    alt="Pelé con la camiseta del Santos FC"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3 class="hola">Santos Fútbol Club</h3>
+                    <p>
+                      Debutó en 1956 y fue la gran figura del club hasta 1974.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="2.jpg"
+                    class="d-block"
+                    alt="Pelé levantando la Copa del Mundo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3 class="hola">Tricampeón del mundo</h3>
+                    <p>Campeón con Brasil en 1958, 1962 y 1970.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="3.jpg"
+                    class="d-block"
+                    alt="Pelé como embajador del fútbol"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4 class="hola">O Rey del fútbol</h4>
+                    <p>Nombrado por la FIFA mejor jugador del siglo XX.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-pele"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-pele"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="col-12 col-lg-4" id="formulario">
+            <section class="form-box">
+              <h4>Formulario</h4>
+
+              <form action="#" novalidate>
+                <div class="mb-3">
+                  <label class="form-label" for="formNombre"
+                    >Nombre completo</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Escribe tu nombre"
+                    id="formNombre"
+                    name="nombre"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="formEmail"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Enter email"
+                    id="formEmail"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="formPassword">Password</label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    placeholder="Password"
+                    id="formPassword"
+                    name="password"
+                    autocomplete="new-password"
+                    minlength="6"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="formMensaje">Mensaje</label>
+                  <textarea
+                    class="form-control"
+                    id="formMensaje"
+                    name="mensaje"
+                    rows="3"
+                    placeholder="Cuéntanos qué te gustaría saber"
+                  ></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="formFile">File input</label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="formFile"
+                    name="archivo"
+                  />
+                </div>
+
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </form>
+            </section>
+          </div>
+        </div>
+
+        <!-- Imagen + Tarjeta -->
+        <h2 class="section-title" id="contenido">Contenido adicional</h2>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-md-6">
+            <div class="image-box">
+              <img src="4.jpg" alt="Pelé celebrando un gol" />
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-header">Principales logros</div>
+
+              <div class="card-body">
+                <ul class="card-text mb-0">
+                  <li>Tres Copas del Mundo: 1958, 1962 y 1970</li>
+                  <li>Máximo goleador histórico de la Selección de Brasil</li>
+                  <li>
+                    Más de 1.000 goles reconocidos por Guinness World Records
+                  </li>
+                  <li>Elegido por la FIFA mejor jugador del siglo XX</li>
+                </ul>
+                <div class="polo">
+                  <video autoplay muted loop playsinline preload="auto">
+                    <source src="video.mp4" type="video/mp4" />
+                  </video>
+                  <div class="polo-caption">
+                    <h3 class="hola">EL MEJOR GOL DE PELE</h3>
+                    <p>
+                      Este es el mejor gol de pele en toda su carrera como
+                      jugador profesional de futbol
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                Fuente: FIFA y Guinness World Records
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legado -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="section-title">Legado</h3>
+            <p>
+              Además de sus títulos con el Santos y la Selección Brasileña, Pelé
+              jugó sus últimos años en el New York Cosmos, donde ayudó a
+              popularizar el fútbol en Estados Unidos. Después de retirarse fue
+              embajador del deporte, ocupó el cargo de Ministro de Deportes de
+              Brasil (1995-1998) y recibió el Balón de Oro Honorífico en 2013.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <h4 class="hola">Pelé · O Rey</h4>
+              <p class="mb-0">
+                Página informativa dedicada a Edson Arantes do Nascimento,
+                considerado uno de los más grandes futbolistas de la historia.
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <h5>Navegación</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4">
+              <h6>Contacto</h6>
+              <p class="mb-0">
+                contacto@pagina-pele.com<br />Sitio realizado con fines
+                educativos.
+              </p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            Página realizada con Bootstrap &middot; &copy; 2026
+          </div>
+          <div class="adios">
+            <p>
+              <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img
+                  style="border: 0; width: 88px; height: 31px"
+                  src="https://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="¡CSS Válido!"
+                />
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
+</html>
